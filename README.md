@@ -20,6 +20,9 @@ Solution Type: A feature loaded Android Mobile Application
 Made using: Android Studio & Firebase Services
 Languages used: Java, XML, JSON
 
+***The apk file of the app is provided in this same repository.
+The codes of all the activities is also provided under the src folder.
+
 ------------------------------------------------------------
 
 Salient features of Tuteelink:
