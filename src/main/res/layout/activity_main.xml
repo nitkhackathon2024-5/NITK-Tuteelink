@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/my_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:ignore="HardcodedText">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/welcomeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Welcome,"
+                android:layout_marginBottom="3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"/>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/welcomeTv"
+                android:background="@color/blue"/>
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/v1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tests"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/physicsLl"
+                        android:layout_marginStart="10dp"
+                        android:padding="5dp"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/phy"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Physics"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/chemistryLl"
+                        android:layout_marginStart="10dp"
+                        android:padding="5dp"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/chem"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chemistry"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mathematicsLl"
+                        android:layout_marginStart="10dp"
+                        android:padding="5dp"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/math"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Maths"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="* More subjects will be added soon..."
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:layout_marginStart="10dp"
+                    android:gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/ll1"
+                android:background="@color/blue"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leaderboards"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/physicsLeaderboard"
+                        android:layout_marginStart="10dp"
+                        android:padding="5dp"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/phy"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Physics"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/chemistryLeaderboard"
+                        android:layout_marginStart="10dp"
+                        android:padding="5dp"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/chem"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chemistry"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mathematicsLeaderboard"
+                        android:layout_marginStart="10dp"
+                        android:padding="5dp"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/math"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Maths"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textSize="20sp"
+                    android:text="Proudly made"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textSize="20sp"
+                    android:text="@string/by_nitians"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textSize="20sp"
+                    android:text="@string/from_nitk_surathkal"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- this the navigation view which draws and shows the navigation drawer -->
+        <!-- include the menu created in the menu folder -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/vNV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/menu_main" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>

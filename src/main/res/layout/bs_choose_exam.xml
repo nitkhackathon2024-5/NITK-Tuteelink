@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_blue"
+            android:background="@null"
+            android:padding="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exam you're preparing for...!!"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-condensed-light"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/jeeMainsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JEE Mains"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:padding="6dp"
+            android:background="@drawable/edittext_bg"/>
+
+        <TextView
+            android:id="@+id/jeeAdvTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JEE Advanced"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:padding="6dp"
+            android:background="@drawable/edittext_bg"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/neetTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEET"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:layout_margin="5dp"
+        android:padding="6dp"
+        android:background="@drawable/edittext_bg"/>
+
+    <TextView
+        android:id="@+id/upscTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPSC"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:layout_margin="5dp"
+        android:padding="6dp"
+        android:background="@drawable/edittext_bg"/>
+
+    <TextView
+        android:id="@+id/ndaTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NDA"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:layout_margin="5dp"
+        android:padding="6dp"
+        android:background="@drawable/edittext_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/kcetTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KCET"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:padding="6dp"
+            android:background="@drawable/edittext_bg"/>
+
+        <TextView
+            android:id="@+id/comedkTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMEDK"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:padding="6dp"
+            android:background="@drawable/edittext_bg"/>
+
+        <TextView
+            android:id="@+id/gujcetTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GUJCET"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:padding="6dp"
+            android:background="@drawable/edittext_bg"/>
+
+    </LinearLayout>
+
+</LinearLayout>

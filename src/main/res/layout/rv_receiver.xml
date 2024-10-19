@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/receiverRl"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rmsgTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/blue"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/rdateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xx:xx"
+            android:layout_below="@+id/rmsgTv"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="2dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/senderRl"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/smsgTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:background="@drawable/button_bg"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/sdateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xx:xx"
+            android:layout_below="@+id/smsgTv"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="2dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

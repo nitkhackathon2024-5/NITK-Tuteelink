@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/testLblTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Mechanics-I Test"
+            android:textColor="@color/blue"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/quesLblTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/questionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question Text"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/optionATv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option A"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="17sp"
+            android:background="@drawable/edittext_bg"
+            android:layout_margin="10dp"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/optionBTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option B"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="17sp"
+            android:background="@drawable/edittext_bg"
+            android:layout_margin="10dp"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/optionCTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option C"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="17sp"
+            android:background="@drawable/edittext_bg"
+            android:layout_margin="10dp"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/optionDTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option D"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="17sp"
+            android:background="@drawable/edittext_bg"
+            android:layout_margin="10dp"
+            android:textColor="@color/blue"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextBtn"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"/>
+
+</RelativeLayout>

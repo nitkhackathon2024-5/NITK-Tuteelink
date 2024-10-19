@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/avatarIv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/img1"/>
+
+    <EditText
+        android:id="@+id/nameTv"
+        android:background="@drawable/edittext_bg"
+        android:padding="10dp"
+        android:layout_below="@id/avatarIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:gravity="start"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/blue"/>
+
+    <EditText
+        android:id="@+id/bioTv"
+        android:background="@drawable/edittext_bg"
+        android:padding="10dp"
+        android:layout_below="@id/nameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tell us about yourself"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/blue"
+        android:minHeight="100dp"/>
+
+    <TextView
+        android:id="@+id/genderTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg"
+        android:text="Gender"
+        android:layout_below="@id/bioTv"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/drop_down_blue"/>
+
+    <TextView
+        android:id="@+id/examTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exam"
+        android:layout_below="@id/genderTv"
+        android:padding="10dp"
+        android:background="@drawable/edittext_bg"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/drop_down_blue"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"
+        android:layout_below="@id/examTv"/>
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".LoginActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_blue"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/app_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgIv"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Sign In"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Edit text for email -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter your email"
+            app:hintTextColor="@color/blue">
+
+            <!--this is the actual edit text which takes the input-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter your password"
+            app:hintTextColor="@color/blue"
+            app:passwordToggleEnabled="true">
+
+            <!--this is the actual edit text which takes the input-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:inputType="textPassword"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgotPasswLblTv"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="5dp"
+            android:text="Forgot password? Recover."
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/registerLblTv"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="5dp"
+            android:text="New to TuteeLink? Register."
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <!-- Button for register with text "Register" -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signinBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tuteelink</string>
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="by_nitians">by <b><i>NITians</i></b></string>
+    <string name="from_nitk_surathkal">from <b><i>NITK Surathkal</i></b></string>
+</resources>

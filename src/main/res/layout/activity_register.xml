@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_blue"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"/>
+
+            <ImageView
+                android:id="@+id/imgIv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/app_logo"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign UP"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:layout_below="@id/imgIv"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed-light"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:hintTextColor="@color/blue"
+            android:hint="Enter your name">
+
+            <!--this is the actual edit text which takes the input-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:inputType="textPersonName"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Edit text for email -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:hintTextColor="@color/blue"
+            android:hint="Enter your email">
+
+            <!--this is the actual edit text which takes the input-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:hintTextColor="@color/blue"
+            app:passwordToggleEnabled="true"
+            android:hint="Create your password">
+
+            <!--this is the actual edit text which takes the input-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:inputType="textPassword"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/passwordCheckerLl"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/labelMainTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/red"
+                android:textSize="13sp"
+                android:text="* Password must contain at least:"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:clickable="false"/>
+
+                <TextView
+                    android:id="@+id/labelTv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="13sp"
+                    android:text="8 characters"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:clickable="false"/>
+
+                <TextView
+                    android:id="@+id/labelTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="13sp"
+                    android:text="1 special character"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:clickable="false"/>
+
+                <TextView
+                    android:id="@+id/labelTv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="13sp"
+                    android:text="1 alphabet"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField3"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:hintTextColor="@color/blue"
+            app:passwordToggleEnabled="true"
+            android:hint="Re-enter your password">
+
+            <!--this is the actual edit text which takes the input-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/rePasswordEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:inputType="textPassword"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Button for register with text "Register" -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:background="@drawable/button_bg"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</ScrollView>
